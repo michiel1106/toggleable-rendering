@@ -14,6 +14,7 @@ import static bikerboys.norendering.noitemrenderingClient.RENDER_TOGGLE;
 public class ExampleMixin {
 
 	//toggles rendering by canceling the rendering method
+	// im just testing the git pushing stuff so idk
 
 	@Inject(method = "render(Lnet/minecraft/entity/ItemEntity;FFLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V", at = @At("HEAD"), cancellable = true)
 	private void onRender(CallbackInfo ci) {
