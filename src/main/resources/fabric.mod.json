@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "no-item-rendering",
+	"version": "${version}",
+	"name": "no item rendering",
+	"description": "my mod",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no-item-rendering/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"bikerboys.norendering.NoItemRendering"
+		],
+		"client": [
+			"bikerboys.norendering.noitemrenderingClient"
+
+		]
+	},
+	"mixins": [
+		"no-item-rendering.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-key-binding-api-v1": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
